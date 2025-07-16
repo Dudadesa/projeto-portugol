@@ -1,0 +1,64 @@
+programa {
+  funcao inicio() {
+   inteiro dia, madeira, pedra, comida
+   caracter abrigo, entao, itens  
+    // Começo do jogo
+        escreva("Digite a quantidade inicial de comida: ")
+        leia(comida)
+
+
+        escreva("Digite a quantidade inicial de madeira: ")
+        leia(madeira)
+
+
+        escreva("Digite a quantidade inicial de pedra: ")
+        leia(pedra)
+     
+   abrigo <- 0
+   itens <- 0
+   dia <-  1
+   // Menu interativo
+           escreva("\nEscolha um dia para simular (1 a 7)")
+            leia(dia)
+
+
+           se (dia == 1) entao
+           
+     escreva ("\n [DIA 1] Coletando madeira e construindo abrigo...\n")
+     madeira <- madeira + 10
+     comida <- comida + 2
+     abrigo <- abrigo + 1
+     escreva("Madeira:", madeira, "\n")
+     escreva("Comida: ", comida, "\n")
+     escreva("Abrigo construido! \n")
+      se (dia == 2 ) entao
+     escreva("\n [DIA 2] Mineirando pedra e criar e coletando ferramentas... \n")
+     pedra <- pedra + 15
+     comida <- comida - 1
+     escreva("Pedra: ", pedra, "\n")
+     escreva("Comida: ", comida, "\n")
+     se (dia == 3) entao
+     escreva(" \n [DIA 3] Criando fornalha e bau... \n")
+     itens "<- madeira, pedra, ferramentas"
+     escreva("Itens: ", itens, "\n")
+     se (dia == 4) entao
+     escreva(" \n [DIA 4] Explorando cavernas e coletando minerios... \n")
+     comida <- comida + 2
+     escreva("Comida: ", comida, "\n")
+     se (dia == 5) entao
+     escreva("\n [DIA 5] Criando armadura e pescando alimentos... \n")
+     comida <- comida + 2
+     escreva("Comida: ", comida, "\n")
+     se (dia == 6) entao
+     escreva("\n [DIA 6] Plantando e melhorando abrigo... \n")
+     escreva("Agricultura iniciada. \n")
+     se(dia == 7) entao
+     escreva("\n [DIA 7] Preparando defesas para a noite final..")
+     comida <- comida - 2
+     escreva("Comida: ", comida, "\n")
+     escreva("Sobreviveu a noite!\n")
+      dia <- dia + 1
+      escreva("\n")
+     }
+   
+}
